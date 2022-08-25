@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>ventas</title>
+</head>
+<body>
+    <!--   HEADER -->
+    <header>        
+    <div>
+        <button class="btn"><a href="pre_ingreso.html">Acceder</a></button>
+    </div>
+    <nav>
+        <ul class="nav__list" >
+            <li class="list_link" ><a href="servicios.html">Servicios</a></li>
+            <li class="list_link" ><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="logo">
+        <a href="pre_ingreso.html"><img src="img/logo.svg" width="100px" alt=""></a>
+    </div>
+    </header>
+    <!--FIN HEADER-->
+
+
+
+
+    <!--FORMULARIO-->
+    <section>
+        <div class="container">
+            <br><br>
+            <form>
+                <h1>registrate</h1>
+                <br>
+                <div class="step step-1 active"> <!-- P A S O - 1 -->
+<!--DIV APERTURA--> <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" class="text" name="Nombre" placeholder="Nombre" tabindex="1" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="Usuario">Usuario</label>
+                        <input type="text" class="text" name="Apellido" placeholder="Apellido" tabindex="1" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="Correo-Electronico">Correo Electronico</label>
+                        <input type="email" class="text" name="Correo-Electronico" placeholder="Correo Electronico" tabindex="1" required />
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="next-btn">Siguiente</button> <!--BOTON SIGUIENTE-->
+                    </div>
+                    <br><br><br><br><br>
+                    <div class="login">
+                        Ya tenes cuenta? <a href="login.html">Iniciar Sesion</a>
+                    </div>
+<!--DIV CIERRE--></div>
+
+                    <div class="step step-2">    <!-- P A S O - 2 -->
+<!--DIV APERTURA--><div class="form-group">
+                        <label for="Telefono">Telefono</label>
+                        <input type="number" id="Telefono" name="Telefono" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="Pais">Pais</label>
+                        <input type="text" id="Pais" name="Pais" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="Ciudad">Ciudad</label>
+                        <input type="text" id="Ciudad" name="Ciudad" required />
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="previous-btn">Atras</button> <!--BOTON ATRAS-->
+                        <button type="button" class="next-btn">Siguiente</button> <!--BOTON SIGUIENTE-->
+                    </div>
+<!--DIV CIERRE--></div>
+
+
+                    <div class="step step-3">   <!-- P A S O - 3 -->
+<!--DIV APERTURA--><div class="form-group">
+                        <label for="Contraseña">Contraseña</label>
+                        <input type="text" class="text" name="password" placeholder="Password" tabindex="2" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="Repetir-Contraseña">Repetir Contraseña</label>
+                        <input type="text" class="text" name="Repetir-password" placeholder="Repetir Password" tabindex="2" required />
+                    </div>                      
+                    <div class="form-group">
+                        <button type="button" class="previous-btn">Atras</button> <!--BOTON ATRAS-->
+                        <button type="submit" class="submit-btn">Crear cuenta</button> <!--BOTON REGISTRO-->                        
+                    </div> 
+<!--DIV CIERRE--></div>
+
+                    
+            </form>
+        </div>
+    </section>
+        <!-- FIN FORMULARIO -->
+    <script src="JS/script.js"></script>
+</body>
+</html>
